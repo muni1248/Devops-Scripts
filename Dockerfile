@@ -2,6 +2,6 @@ FROM openjdk:11-jre-slim
 
 WORKDIR /app
 
-COPY your-application.jar /app/your-application.jar
+COPY ./target/myapp.jar /app/myapp.jar
 
-ENTRYPOINT ["java", "-jar", "your-application.jar"]
+ENTRYPOINT ["java", "-jar", "myapp.jar"]
